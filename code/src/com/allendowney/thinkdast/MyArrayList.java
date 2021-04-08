@@ -205,9 +205,10 @@ public class MyArrayList<T> implements List<T> {
 
 	@Override
 	public T set(int index, T element) {
-		T oldValue = get(index);
+
 		array[index] = element;
-		return oldValue;
+		T newValue = get(index);
+		return newValue;
 
 	}
 
